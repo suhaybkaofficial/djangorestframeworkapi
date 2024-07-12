@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 import os
 
 from pathlib import Path
-
+CORS_ALLOW_ALL_ORIGINS = True
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'products',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
